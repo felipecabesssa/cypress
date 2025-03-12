@@ -12,7 +12,7 @@ Cypress.Commands.add('login', (email, senha) => {
     cy.get('[data-test="submit-button"]').click();
  })
 
- 
+
 
 // ***********************************************
 // This example commands.js shows you how to
