@@ -8,9 +8,10 @@ describe('Alura busca cursos', () => {
 
     it('buscar curso de java', () => {
 
-        cy.get('.header__nav--busca-form').type('java');
-        cy.get('.header__nav--busca-submit').click();
-        
+        cy.get('#header-barraBusca-form-campoBusca').type('java');
+        cy.get('.header-barraBusca-form-submit').click();
+        cy.get('h4.busca-resultado-nome').should('have.text', 'Formação Java e Orientação a Objetos');
+
     })
 
 })
